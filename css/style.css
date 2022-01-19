@@ -206,11 +206,11 @@ body {
     padding-right: 15px;
 }
 
-#about .aboutleft {
+#about .about-left {
     width: 58.33333333%;
 }
 
-#about .aboutright {
+#about .about-right {
     width: 41.66666667%;
 } 
 
@@ -255,4 +255,40 @@ body {
 #about .tabs .tab-content {
     font-size: 16px;
     line-height: 28px;
+}
+
+#features {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.two-columns {
+    display: flex;
+}
+
+.features-column {
+    flex: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.column-item {
+    margin-bottom: 40px;
+    text-align: initial;
+}
+
+.column-item h4 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #222;
+}
+
+.column-item p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.features-buttons .button {
+    margin-right: 20px;
 }
