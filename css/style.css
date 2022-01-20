@@ -336,3 +336,61 @@ body {
         transform: translateX(-390px) rotate(90deg);
     }
   }
+
+.about-responsive {
+    display: flex;
+    background-color: #f5f5f5;
+    align-items: center;
+}
+
+.tablet-columns {
+    flex: 50%;
+}
+
+/* OUR FEATURES START */
+
+.our-features {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+}
+
+#our-features {
+    background-image: url(../img/features.jpg);
+    background-repeat: repeat;
+}
+
+.features-columns {
+    color: white;
+}
+
+.responsive-design {
+    padding-left: 30px;
+    overflow: hidden;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.responsive-design p {
+    padding-left: 20px;
+}
+
+#our-features h2 span {
+    border-bottom: 2px solid #ffc401;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+.icon {
+    box-sizing: border-box;
+    color: yellow;
+    float: left;
+    font-size: 60px;
+}
+
+/* section .our-features {
+    background-image: url(../img/features.jpg);
+    background-repeat: repeat;
+} */
