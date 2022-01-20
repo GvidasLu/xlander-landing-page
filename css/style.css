@@ -88,6 +88,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 10;
 }
 
 #header .logo {
@@ -171,6 +172,8 @@ body {
 #about {
     padding-top: 80px;
     padding-bottom: 120px;
+    position: relative;
+    overflow: hidden;
 }
 
 #about .section-heading {
@@ -265,6 +268,7 @@ body {
 
 .two-columns {
     display: flex;
+    margin-top: 80px;
 }
 
 .features-column {
@@ -292,3 +296,43 @@ body {
 .features-buttons .button {
     margin-right: 20px;
 }
+
+.like {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    animation-name: animacija;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transform: rotate(90deg);
+}
+
+.like:nth-of-type(2) {
+    right: 0;
+    left: initial;
+    animation-name: backwards;
+}
+
+@keyframes backwards { 
+    0% {
+        transform: translateX(60px) rotate(-90deg);
+    }
+    50% {
+        transform: translateX(360px) rotate(-90deg);
+    }
+    100% {
+        transform: translateX(60px) rotate(-90deg);
+    }
+  }
+
+@keyframes animacija { 
+    0% {
+        transform: translateX(-390px) rotate(90deg);
+    }
+    50% {
+        transform: translateX(-35px) rotate(90deg);
+    }
+    100% {
+        transform: translateX(-390px) rotate(90deg);
+    }
+  }
