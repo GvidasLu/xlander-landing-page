@@ -678,3 +678,65 @@ body {
     margin-top: 17px;
 }
 /* CONTACT FORM END */
+
+/* OUR ADDRESS START */
+.info-box {
+    padding: 30px;
+}
+
+.info-box i {
+    color: #ffc400;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 10px;
+}
+
+.info-box h4 {
+    color: #222;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.flex-address {
+    display: flex;
+    justify-content: center;
+}
+
+#our-address .container {
+    text-align: center;
+}
+
+#our-address h3 {
+    color: #222;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 80px;
+}
+
+#our-address h2 {
+    color: #222;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#our-address h2::after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 200px;
+    background: #ffc400;
+    margin: 15px auto;
+    position: relative;
+}
+
+#google-maps iframe {
+    width: 100%;
+    display: block;
+}
+
+/* OUR ADDRESS END */
