@@ -740,3 +740,151 @@ body {
 }
 
 /* OUR ADDRESS END */
+
+/* OUR PORTFOLIO START */
+
+#our-portfolio .container h3 {
+    text-align: center;
+    color: #222;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 80px;
+    
+}
+
+#our-portfolio .container h2 {
+    text-align: center;
+    color: #222;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#our-portfolio .container h2::after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 200px;
+    background: #ffc400;
+    margin: 15px auto;
+    position: relative;
+}
+
+#our-portfolio .masonry-categories > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#our-portfolio .masonry-categories > ul > li > a {
+    background-color: #f4f4f4;
+    font-family: 'Oswald', sans-serif;
+    padding: 5px 15px;
+    font-size: 16px;
+    color: #333;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 5px;
+}
+
+#our-portfolio .masonry-categories > ul > li > a:hover {
+    background-color: #ffc400;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+#our-portfolio .masonry-categories > ul > li.active > a {
+    background-color: #ffc400;
+}
+
+#our-portfolio .masonry-categories > ul > li.active > a:hover {
+    color: inherit;
+}
+
+#our-portfolio .masonry-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+#our-portfolio .masonry-blocks > .masonry-block {
+    width: 25%;
+}
+
+#our-portfolio .masonry-blocks > .masonry-block img {
+    max-width: 100%;
+    display: block;
+    transition: all .5s ease-in-out;
+}
+
+#our-portfolio .masonry-blocks > .masonry-block > a:hover > img {
+    transform: scale(1.5);
+}
+
+#our-portfolio .masonry-blocks > .masonry-block > a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+#our-portfolio .masonry-blocks > .masonry-block > a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease-in-out;
+    z-index: 1;
+}   
+
+#our-portfolio .masonry-blocks > .masonry-block > a:hover::before {
+    background-color: rgb(255, 196, 0, 0.75);
+}
+
+ 
+#our-portfolio .masonry-blocks > .masonry-block > a > .hover {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+}
+
+#our-portfolio .masonry-blocks > .masonry-block > a:hover > .hover {
+    opacity: 1;
+    top: 0;
+}
+
+#our-portfolio .masonry-blocks > .masonry-block > a > .hover > h3 {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #fff;
+}
+
+#our-portfolio .masonry-blocks > .masonry-block > a > .hover > h4 {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.masonry-blocks a {
+    cursor: url('/img/pointer.png'), crosshair;
+}
+/* OUR PORTFOLIO END */

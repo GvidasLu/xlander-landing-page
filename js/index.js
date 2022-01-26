@@ -1,1 +1,1 @@
-alert('LABAS PASAULI')
+// alert('LABAS PASAULI')
